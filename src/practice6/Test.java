@@ -57,6 +57,14 @@ public class Test {
         iDNumber[3] = new Student("Petrova Ekaterina", 103, 140);
         iDNumber[4] = new Student("Kulikov Maks", 102, 99);
 
+//        Student[] iDNumber2 = new Student[4];
+//        iDNumber[0] = new Student("Ivanova Nastya", 107, 112);
+//        iDNumber[1] = new Student("Sidorov Konstantin", 105, 145);
+//        iDNumber[2] = new Student("Ivanova Vera", 108, 80);
+//        iDNumber[3] = new Student("Koroleva Dasha", 106, 150);
+//
+//        Student[] allStudents = mergeSort(iDNumber, iDNumber2);
+
         System.out.println("Введите номер упражнения: ");
         int exNumber = scanner.nextInt();
 
@@ -73,7 +81,7 @@ public class Test {
             default:
                 break;
         }
-        
+
         for (int i = 0; i < iDNumber.length; i++) {
             System.out.println(iDNumber[i]);
         }
