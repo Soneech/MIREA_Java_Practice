@@ -1,13 +1,20 @@
 package practice5.task5;
 
-public class Task {
-    private int result = 0;
+import java.util.Scanner;
 
-    public int sum(int N) {
+public class Task {
+    private static int result = 0;
+
+    public static int sum(int N) {
         if (N > 0) {
             result += N % 10;
             sum(N / 10);
         }
         return result;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        System.out.println(sum(N));
     }
 }
