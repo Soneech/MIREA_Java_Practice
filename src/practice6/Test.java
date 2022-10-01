@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Test {
     private static final SortingStudentsByGPA sorting = new SortingStudentsByGPA();
-    public static <T> void insertionSort(Comparable<T>[] array) {
+    public static <T extends Comparable<T>> void insertionSort(T[] array) {
         for (int i = 1; i < array.length; i++) {
-            Comparable<T> temp = array[i];
+            T temp = array[i];
             int j = i;
-            while (j > 0 && array[j - 1].compareTo((T) temp) > 0) {
+            while (j > 0 && array[j - 1].compareTo(temp) > 0) {
                 array[j] = array[j - 1];
                 j--;
             }
@@ -74,9 +74,6 @@ public class Test {
                 break;
             case 2:
                 quickSort(iDNumber, 0, iDNumber.length - 1);
-                break;
-            case 3:
-
                 break;
             default:
                 break;
