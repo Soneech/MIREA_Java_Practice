@@ -2,7 +2,7 @@ package practice7.task1;
 
 import java.util.Scanner;
 import java.util.Stack;
-
+// LIFO
 public class DrunkardStack {
     public static void game(Stack<Integer> player1, Stack<Integer> player2) {
         int steps = 0, card1, card2;
@@ -19,9 +19,6 @@ public class DrunkardStack {
                 player2.add(0, card2);
             }
             steps++;
-//            System.out.println("step: " + steps);
-//            System.out.println(player1);
-//            System.out.println(player2);
         }
 
         if (steps != 106) {

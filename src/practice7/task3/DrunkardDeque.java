@@ -3,7 +3,7 @@ package practice7.task3;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
-
+// FIFO
 public class DrunkardDeque {
     public static void game(Deque<Integer> player1, Deque<Integer> player2) {
         int steps = 0, card1, card2;
@@ -19,9 +19,6 @@ public class DrunkardDeque {
                 player2.addLast(card2);
             }
             steps++;
-//            System.out.println("step: " + steps);
-//            System.out.println(player1);
-//            System.out.println(player2);
         }
 
         if (steps != 106) {
