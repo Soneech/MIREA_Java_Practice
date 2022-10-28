@@ -2,10 +2,10 @@ package practice10.task1;
 
 public class Complex {
     int real;
-    int complex;
+    int image;
 
-    public Complex(int real, int complex) {
+    public Complex(int real, int image) {
         this.real = real;
-        this.complex = complex;
+        this.image = image;
     }
 }
