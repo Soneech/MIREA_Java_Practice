@@ -53,6 +53,7 @@ public class Address {
 
     @Override
     public String toString() {
-        return country + " " + region + " " + city + " " + street + " " + house + " " + part + " " + flat;
+        return
+                String.format("%s %s %s %s %s %s %s", country, region, city, street, house, part, flat);
     }
 }
