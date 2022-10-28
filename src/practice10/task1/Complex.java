@@ -8,4 +8,8 @@ public class Complex {
         this.real = real;
         this.image = image;
     }
+
+    public void description() {
+        System.out.println("real: " + real + "; " + "image: " + image);
+    }
 }
