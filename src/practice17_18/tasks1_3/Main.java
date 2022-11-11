@@ -13,7 +13,7 @@ public class Main {
     public static boolean check(String regex, String test) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(test);
-        return matcher.matches();
+        return matcher.find();
     }
 
     public static void firstTask() {
@@ -39,10 +39,10 @@ public class Main {
     }
 
     public static void thirdTask() {
-        String regex = "^\\d+\\.\\d{1,2} (USD|RUR|EUR)";
+        String regex = "((?<=(\\s|[^0-9]))|^)([0-9]+)(\\.[0-9]+)?\\s(USD|RUR|EU)((?=([^a-zA-Z]))|$)";
 
         String test1 = "23.78 USD";
-        String test2 = "22 UDD, 0.002 USD";
+        String test2 = "22.1 USD, 0.002 USD";
 
         System.out.println("Task3");
         System.out.println("test1: " + check(regex, test1));
