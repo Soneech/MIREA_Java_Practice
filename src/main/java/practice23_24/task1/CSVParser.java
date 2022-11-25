@@ -1,4 +1,4 @@
-package practice23_24;
+package practice23_24.task1;
 
 import java.util.HashMap;
 import java.util.Map;

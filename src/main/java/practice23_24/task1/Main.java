@@ -1,4 +1,4 @@
-package practice23_24;
+package practice23_24.task1;
 
 
 import com.opencsv.CSVReader;
@@ -6,7 +6,6 @@ import com.opencsv.exceptions.CsvException;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
