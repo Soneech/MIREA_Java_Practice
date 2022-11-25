@@ -1,4 +1,4 @@
-package practice6;
+package practice5.practice6;
 
 public class Student implements Comparable<Student>{
     private String name;

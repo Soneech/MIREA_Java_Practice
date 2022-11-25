@@ -1,4 +1,4 @@
-package practice2.task2;
+package main.java.practice2.task2;
 
 public class Ball {
     private double x = 0.0;
